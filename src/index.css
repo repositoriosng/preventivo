@@ -1,0 +1,19 @@
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f7f7f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .preventivo-filtros { flex-basis: 100%; width: 100%; }
+  .preventivo-vistas { flex-basis: 100%; width: 100%; }
+  .preventivo-vistas button { flex: 1; justify-content: center; padding: 9px 8px; font-size: 12px; }
+}
