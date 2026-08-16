@@ -16,4 +16,31 @@ body {
   .preventivo-filtros { flex-basis: 100%; width: 100%; }
   .preventivo-vistas { flex-basis: 100%; width: 100%; }
   .preventivo-vistas button { flex: 1; justify-content: center; padding: 9px 8px; font-size: 12px; }
+
+  .checklist-overlay {
+    padding: 0 !important;
+    align-items: flex-end !important;
+  }
+
+  .checklist-modal {
+    max-height: 92dvh !important;
+    border-radius: 16px 16px 0 0 !important;
+  }
+
+  .checklist-form-row,
+  .checklist-edit-row {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+
+  .checklist-form-input,
+  .checklist-edit-input,
+  .checklist-form-row button,
+  .checklist-edit-row > button {
+    width: 100%;
+  }
+
+  .checklist-edit-row > button {
+    justify-content: center;
+  }
 }
