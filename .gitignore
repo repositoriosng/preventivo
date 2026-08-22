@@ -8,6 +8,12 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+.venv
+.env
+__pycache__
+*.py[cod]
+db.sqlite3
+*.sqlite3
 dist
 dist-ssr
 *.local
@@ -23,10 +29,3 @@ dist-ssr
 *.sln
 *.sw?
 
-# AI Agents and Tools
-.qodo
-.claude
-.agents
-
-# Supabase
-supabase/.temp/

@@ -14,6 +14,19 @@
 
 :{$PORT:3000} {
     log
+    
+    # Proxy requests to backend container
+    handle /graphql* {
+        reverse_proxy backend:8000
+    }
+    handle /admin* {
+        reverse_proxy backend:8000
+    }
+    handle /static* {
+        reverse_proxy backend:8000
+    }
+
+    # Frontend
     rewrite /health /*
     root * /app/dist
     encode gzip

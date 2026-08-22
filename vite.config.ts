@@ -8,24 +8,15 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'Maple Mantenimiento',
-        short_name: 'Maple Mant.',
-        description: 'Sistema de mantenimiento preventivo para operadores de fábrica',
+        name: 'Sistema de Inventario',
+        short_name: 'Inventario',
+        description: 'Sistema local de gestion de inventario',
         theme_color: '#1D9E75',
         background_color: '#ffffff',
         display: 'standalone',
         orientation: 'portrait'
       },
-      workbox: {
-        // Cachear assets estáticos y páginas visitadas
-        runtimeCaching: [
-          {
-            urlPattern: /^https:\/\/.*supabase\.co\/.*/i,
-            handler: 'NetworkFirst',
-            options: { cacheName: 'supabase-api', networkTimeoutSeconds: 10 }
-          }
-        ]
-      }
+      workbox: {}
     })
   ],
   resolve: {
